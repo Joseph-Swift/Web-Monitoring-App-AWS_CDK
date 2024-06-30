@@ -1,0 +1,48 @@
+{
+  "version": "36.0.0",
+  "files": {
+    "37f345dcf6e0072ebf98a493cd85b44174f4e3edce5ec397b2e2e5d0f975495a": {
+      "source": {
+        "path": "asset.37f345dcf6e0072ebf98a493cd85b44174f4e3edce5ec397b2e2e5d0f975495a",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "471112667717-ap-southeast-2": {
+          "bucketName": "cdk-hnb659fds-assets-471112667717-ap-southeast-2",
+          "objectKey": "37f345dcf6e0072ebf98a493cd85b44174f4e3edce5ec397b2e2e5d0f975495a.zip",
+          "region": "ap-southeast-2",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::471112667717:role/cdk-hnb659fds-file-publishing-role-471112667717-ap-southeast-2"
+        }
+      }
+    },
+    "a9097f2f94c45bc31af76438c15aab1c1b6f276476694e798a75f61d7b91bc52": {
+      "source": {
+        "path": "asset.a9097f2f94c45bc31af76438c15aab1c1b6f276476694e798a75f61d7b91bc52",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "471112667717-ap-southeast-2": {
+          "bucketName": "cdk-hnb659fds-assets-471112667717-ap-southeast-2",
+          "objectKey": "a9097f2f94c45bc31af76438c15aab1c1b6f276476694e798a75f61d7b91bc52.zip",
+          "region": "ap-southeast-2",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::471112667717:role/cdk-hnb659fds-file-publishing-role-471112667717-ap-southeast-2"
+        }
+      }
+    },
+    "28664207db2cf24ed0c4b25008e3b2dd74e4f7407932700cd74c5f4385a7eac1": {
+      "source": {
+        "path": "WebMonitoringAppStack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "471112667717-ap-southeast-2": {
+          "bucketName": "cdk-hnb659fds-assets-471112667717-ap-southeast-2",
+          "objectKey": "28664207db2cf24ed0c4b25008e3b2dd74e4f7407932700cd74c5f4385a7eac1.json",
+          "region": "ap-southeast-2",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::471112667717:role/cdk-hnb659fds-file-publishing-role-471112667717-ap-southeast-2"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

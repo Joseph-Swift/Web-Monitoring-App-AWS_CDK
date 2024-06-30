@@ -1,0 +1,137 @@
+{
+  "version": "36.0.0",
+  "artifacts": {
+    "WebMonitoringAppStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "WebMonitoringAppStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "WebMonitoringAppStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://471112667717/ap-southeast-2",
+      "properties": {
+        "templateFile": "WebMonitoringAppStack.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::471112667717:role/cdk-hnb659fds-deploy-role-471112667717-ap-southeast-2",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::471112667717:role/cdk-hnb659fds-cfn-exec-role-471112667717-ap-southeast-2",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-471112667717-ap-southeast-2/28664207db2cf24ed0c4b25008e3b2dd74e4f7407932700cd74c5f4385a7eac1.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "WebMonitoringAppStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::471112667717:role/cdk-hnb659fds-lookup-role-471112667717-ap-southeast-2",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "WebMonitoringAppStack.assets"
+      ],
+      "metadata": {
+        "/WebMonitoringAppStack/LambdaArtifactBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaArtifactBucketA657EC5C"
+          }
+        ],
+        "/WebMonitoringAppStack/AlarmNotificationsTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AlarmNotificationsTableF1BA5487"
+          }
+        ],
+        "/WebMonitoringAppStack/LambdaRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaRole3A44B857"
+          }
+        ],
+        "/WebMonitoringAppStack/LambdaRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaRoleDefaultPolicy75625A82"
+          }
+        ],
+        "/WebMonitoringAppStack/MyLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyLayer38944FA5"
+          }
+        ],
+        "/WebMonitoringAppStack/WebMetricsLambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebMetricsLambdaE9392478"
+          }
+        ],
+        "/WebMonitoringAppStack/AlarmTopic/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AlarmTopicD01E77F9"
+          }
+        ],
+        "/WebMonitoringAppStack/AlarmTopic/qkrdbals0@icloud.com/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AlarmTopicqkrdbals0icloudcom3CC3A7FD"
+          }
+        ],
+        "/WebMonitoringAppStack/AvailabilityAlarm/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AvailabilityAlarmE6EBAA96"
+          }
+        ],
+        "/WebMonitoringAppStack/LatencyAlarm/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LatencyAlarm5394FC57"
+          }
+        ],
+        "/WebMonitoringAppStack/LambdaPeriodicTrigger/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaPeriodicTrigger919C0107"
+          }
+        ],
+        "/WebMonitoringAppStack/LambdaPeriodicTrigger/AllowEventRuleWebMonitoringAppStackWebMetricsLambdaF56F0993": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaPeriodicTriggerAllowEventRuleWebMonitoringAppStackWebMetricsLambdaF56F099378E0F56D"
+          }
+        ],
+        "/WebMonitoringAppStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/WebMonitoringAppStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/WebMonitoringAppStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "WebMonitoringAppStack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}
